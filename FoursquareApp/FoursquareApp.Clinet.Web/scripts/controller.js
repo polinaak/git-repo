@@ -459,7 +459,6 @@ var controllers = (function () {
                 if (navigator.geolocation) {
 
                     navigator.geolocation.getCurrentPosition(function (position) {
-                        debugger;
                         var user = {
                             username: $(selector).find("#tb-register-username").val(),
                             password: $(selector + " #tb-register-password").val(),
@@ -489,7 +488,6 @@ var controllers = (function () {
                     });
                 }
                 else {
-                    debugger;
                     $("#btn-register").append("Geolocation is not supported by this browser.");
                 }
 
